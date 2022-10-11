@@ -1,25 +1,96 @@
 {
     "Company": {
-        "companyname": {
+        "CompanyName": {
             "regexp": "[A-Z][a-z]{5,10}"
         },
-        "companyid": {
+        "HubspotCompanyId": {
             "int": {
                 "min": 1000000,
                 "max": 9999999
             }
         },
-        "companyurl": {
-            "regexp": "[a-z]{5}\\.[a-z]{2,3}"
+        "Website": {
+            "regexp": "[a-z]{5}\\.com"
         },
-        "contactname": {
-            "string": {}
+        "ContactName": {
+            "regexp": "[A-Z][a-z]{5,10}"
         },
-        "contactemail": {
+        "ContactEmail": {
             "regexp": "[a-z]{5,10}@[a-z]{5}\\.com"
         },
-        "contactphone": {
+        "ContactPhone": {
             "regexp": "#[0-9]{10}"
+        },
+        "MinLoanAmount": {
+            "int": {
+                "min": 500000,
+                "max": 2000000
+            }
+        },
+        "MaxLoanAmount": {
+            "int": {
+                "min": 2000000,
+                "max": 10000000
+            }
+        },
+        "LoanPrograms": {
+            "int": {
+                "min": 1,
+                "max": 18
+            }
+        },
+        "StatesServiced": {
+            "string": [
+                "AZ",
+                "CO",
+                "CA"
+            ]
+        },
+        "StatesLocatedIn": {
+            "string": [
+                "AZ",
+                "CO",
+                "CA"
+            ]
+        },
+        "StatesNote": {
+            "string": []
+        },
+        "Months": {
+            "int": {
+                "min": 1,
+                "max": 360
+            }
+        },
+        "PPP": {
+            "int": {
+                "min": 1,
+                "max": 18
+            }
+        },
+        "Rates": {
+            "int": {
+                "min": 1,
+                "max": 18
+            }
+        },
+        "Speed": {
+            "int": {
+                "min": 1,
+                "max": 18
+            }
+        },
+        "LimitOnBrokerPoints": {
+            "int": {
+                "min": 1,
+                "max": 18
+            }
+        },
+        "UpfrontFees": {
+            "int": {
+                "min": 0,
+                "max": 25000
+            }
         }
     }
 }
