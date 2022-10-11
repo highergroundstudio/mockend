@@ -1,29 +1,25 @@
 {
     "form": {
-        "Company": {
-            "name": {
-                "regexp": "[A-Z][a-z]{5,10}"
-            },
-            "id": {
-                "int": {
-                    "min": 1000000,
-                    "max": 9999999
-                }
-            },
-            "url": {
-                "regexp": "[a-z]{5}\\.[a-z]{2,3}"
+        "companyname": {
+            "regexp": "[A-Z][a-z]{5,10}"
+        },
+        "companyid": {
+            "int": {
+                "min": 1000000,
+                "max": 9999999
             }
         },
-        "Contact": {
-            "name": {
-                "string": {}
-            },
-            "email": {
-                "regexp": "[a-z]{5,10}@[a-z]{5}\\.com"
-            },
-            "phone": {
-                "regexp": "#[0-9]{10}"
-            }
+        "companyurl": {
+            "regexp": "[a-z]{5}\\.[a-z]{2,3}"
+        },
+        "contactname": {
+            "string": {}
+        },
+        "contactemail": {
+            "regexp": "[a-z]{5,10}@[a-z]{5}\\.com"
+        },
+        "contactphone": {
+            "regexp": "#[0-9]{10}"
         }
     }
 }
