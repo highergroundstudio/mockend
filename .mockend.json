@@ -1,7 +1,27 @@
 {
-    "User": {
-        "title": {
+    "Company": {
+        "name": {
+            "regexp": "[A-Z][a-z]{5,10}"
+        },
+        "id": {
+            "int": {
+                "min": 1000000,
+                "max": 9999999
+            }
+        },
+        "url": {
+            "regexp": "[a-z]{5}\\.[a-z]{2,3}"
+        }
+    },
+    "Contact": {
+        "name": {
             "string": {}
+        },
+        "email": {
+            "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}"
+        },
+        "phone": {
+            "regexp": "#[0-9]{10}"
         }
     }
 }
